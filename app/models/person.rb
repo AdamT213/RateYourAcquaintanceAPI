@@ -1,2 +1,3 @@
-class Person < ApplicationRecord
+class Person < ApplicationRecord 
+  has_many :reviews
 end
