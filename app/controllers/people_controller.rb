@@ -22,6 +22,6 @@ class PeopleController < ApplicationController
   private
 
   def person_params
-    params.permit(:id, :name, :description, reviews_attributes: [:star_rating, :description, :user_id]) 
+    params.permit(:id, :name, :description, :location, reviews_attributes: [:star_rating, :description, :user_id]) 
   end
 end
