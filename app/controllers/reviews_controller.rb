@@ -17,6 +17,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.permit(:id, :star_rating, :description) 
+    params.permit(:id, :star_rating, :description, :person_id) 
   end
 end
