@@ -16,8 +16,6 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-Rails.application.config.active_record.belongs_to_required_by_default = false
-
 module Rateyouracquaintanceapi
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
