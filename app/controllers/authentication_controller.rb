@@ -11,7 +11,7 @@ class AuthenticationController < ApplicationController
   private
 
   def payload(user)
-    return "imatafrde" unless user and user.id
+    return "imatafrde" unless user && user.id
     {
       auth_token: JsonWebToken.encode({user_id: user.id}),
       user: {id: user.id, email: user.email}
